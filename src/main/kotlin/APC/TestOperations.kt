@@ -1,4 +1,4 @@
-package APC
+﻿package APC
 
 fun main() {
     val salarios = doubleArrayOf(1000.0, 5000.0, 2079.0, 4230.0, 3150.0, 4010.0, 3000.0, 4000.0, 3200.0,  1500.0,   )
@@ -9,8 +9,8 @@ fun main() {
     }
 
     println("-----------------------")//Filtros
-    println("Maior Salario: R$ ${salarios.max()}\n")
-    println("Menor Salario: R$ ${salarios.min()}\n")
+    println("Maior Salario: R$ ${salarios.maxOrNull()}\n")//Forma atualizada
+    println("Menor Salario: R$ ${salarios.minOrNull()}\n")//Forma atualizada
     println("Media SalariaL: R$ ${salarios.average()}\n")
 
     val salariosMaiorQue2500 = salarios.filter { it > 2500 }
